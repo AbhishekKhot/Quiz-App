@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".QuestionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/TextViewQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="@string/which_animal_is_this"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/ImageViewAnimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/elephant"
+            android:scaleType="centerCrop"
+            android:contentDescription="TODO" />
+        <LinearLayout
+            android:id="@+id/LinearProgressDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/ProgressBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="23"
+                android:minHeight="50dp"
+                android:progress="0"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:indeterminate="false"/>
+            <TextView
+                android:id="@+id/TextViewProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textColor="#0027FF"
+                android:text="@string/_0_10"/>
+
+        </LinearLayout>
+            <TextView
+                android:id="@+id/TextViewOptionOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:background="@drawable/option_background"
+                android:gravity="center"
+                android:paddingVertical="15dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="@string/option_one"/>
+
+            <TextView
+                android:id="@+id/TextViewOptionTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:background="@drawable/option_background"
+                android:gravity="center"
+                android:paddingVertical="15dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="@string/option_tow"/>
+
+            <TextView
+                android:id="@+id/TextViewOptionThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:background="@drawable/option_background"
+                android:gravity="center"
+                android:paddingVertical="15dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="@string/option_three"/>
+
+            <TextView
+                android:id="@+id/TextViewOptionFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:background="@drawable/option_background"
+                android:gravity="center"
+                android:paddingVertical="15dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="@string/option_four"/>
+
+            <Button
+                android:id="@+id/ButtonSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/submit"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:background="#FFE500"/>
+
+    </LinearLayout>
+
+</ScrollView>

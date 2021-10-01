@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="which_animal_is_this">Which Animal is this?</string>
+    <string name="_0_10">0/10</string>
+    <string name="option_one">Option One</string>
+    <string name="option_tow">Option Tow</string>
+    <string name="option_three">Option Three</string>
+    <string name="option_four">Option Four</string>
+    <string name="submit">Submit</string>
+</resources>
